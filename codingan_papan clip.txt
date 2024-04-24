@@ -1,0 +1,336 @@
+      
+
+  // const fungsinya menetapkan nilai yang sudah di tetapkan
+
+
+
+https://github.com/ROKIE071/codingan_rahasia
+
+
+
+        // codingan menampilkan alert uang tidak cukup
+        if (pembayaran >= total) 
+        { 
+            let kembalian = pembayaran - total; 
+            document.getElementById("kembalian").value = kembalian; 
+        } 
+            
+        else 
+        { 
+        alert("Uang Tidak Cukup"); 
+        } 
+
+
+//BAGIAN LENGKAP MENAMPILKAN ALERT UANG TIDAK CUKUP
+function hitungTotal() 
+    { 
+        //let menetapkan nama ke hasil penghitungan 
+
+        // perseInt untuk mengonversi nilai string menjadi bilangan bulat(integer).
+
+        // document.queryselector lebih fleksibel karena dapat memilih berdasarkan id, Tag, class, atau berbagai selektor css
+        let harga = parseInt(document.querySelector('#harga').value); 
+        let jumlah = parseInt(document.querySelector('#jumlah').value); 
+        let discon = parseInt(document.querySelector('#discon').value); 
+       
+        let jumdiscon = harga * (discon / 100); 
+        let total = harga * jumlah; 
+
+        let totalHarga = total - (jumdiscon * jumlah);        
+
+        
+        
+        document.getElementById("total-harga").value = totalHarga; 
+        //document.getElementById untuk memilih berdasarkan Id uniknya saja.
+        //value adalah sebuah nilai
+    } 
+
+
+
+         * (||) artinya OR untuk menambah hasil data password dan username
+         * sedangkan && hanya untuk membikin (1) username dan password
+
+
+
+ // (==) Hanya membandingkan nilai, tidak peduli tipe data
+        // contoh: 5 == "5" akan true meskipun tipe datanya berbeda (integer dan string)
+
+
+
+ //  (===) Membandingkan nilai maupun tipe data.
+        // contoh: 5 === "5" akan false karena tipe datanya berbeda (integer dan string)
+
+
+
+CODINGAN MEMBIKIN DOBEL (USERNAME DAN PASSWORD)
+        if($username === "userlsp" && $password === "smkisfibjm" || $username === "fadzrill" && $password === "1234" ){
+            echo"<meta http-equiv='refresh' content='1;url=home.php'>";
+
+
+
+//MEMBIKIN DISCKON
+function hitungTotal() 
+    { 
+        //let menetapkan nama ke hasil penghitungan 
+
+        // perseInt untuk mengonversi nilai string menjadi bilangan bulat(integer).
+
+        // document.queryselector lebih fleksibel karena dapat memilih berdasarkan id, Tag, class, atau berbagai selektor css
+        let harga = parseInt(document.querySelector('#harga').value); 
+        let jumlah = parseInt(document.querySelector('#jumlah').value); 
+        let discon = parseInt(document.querySelector('#discon').value); 
+       
+        let jumdiscon = harga * (discon / 100); 
+        let total = harga * jumlah; 
+
+        let totalHarga = total - (jumdiscon * jumlah);        
+        
+        document.getElementById("total-harga").value = totalHarga; 
+        //document.getElementById untuk memilih berdasarkan Id uniknya saja.
+        //value adalah sebuah nilai
+    } 
+
+
+
+	//FORM DISCKON
+		<div class="mt-2">
+                    <label for="discon">Discon</label>
+                    <input type="text" class="form-control" id="discon"  required>
+                </div>
+
+
+
+http://172.168.0.1/status
+
+
+(REDEEM KODE).
+   //function untuk mengeksekusi tugas tertentu.
+     function hitungTotal() {
+        //let menetapkan nama ke hasil penghitungan 
+        // perseInt fungsi mengubah bilangan bulat(integer).
+        //document.getElementBy-Id fungsinya memilih berdasarkan Id uniknya saja.
+        // document.queryselector fungsinya memilih selain (ID) name, dan class.
+        let harga = parseFloat(document.getElementById('harga').value);
+
+        let jumlah = parseFloat(document.getElementById('jumlah').value);
+        // parsefloat mengubah string menjadi bilangan (desimal)
+        
+        let hasil = harga * jumlah;
+
+       
+        document.getElementById("total-harga").value = hasil;
+        //value adalah sebuah nilai
+
+        
+    }
+    
+    function redeemKode(){
+        let kodeRedeem = (document.getElementById('kode-redeem').value);
+        let totalHarga = parseFloat(document.getElementById('total-harga').value);
+
+        if(kodeRedeem === 'mejalaku'){
+        let diskon = totalHarga * 0.1;
+        let totalSetelahDiskon = totalHarga - diskon;
+        document.getElementById('total-harga').value = totalSetelahDiskon;
+        alert('Selamat! Anda Mendapatkan Diskon 10%.');
+        
+        }else if(kodeRedeem === 'lampunyala'){
+            let potongan = 500000;
+            let totalSetelahPotongan = totalHarga - potongan;
+            document.getElementById('total-harga').value = totalSetelahPotongan;
+            alert('Selamat! Anda mendapatkan potongan harga Rp 500.000.');
+        }else{
+            alert('kode redeem tidak valid.');
+        }
+    }
+
+
+
+	//FORM CODINGAN REDEEM CODE
+                       <div class="mt-2">
+                          <label for="kode-redeem">Masukkan kode Redeem</label>
+                          <input type="text" id="kode-redeem" name="kode-redeem" class="form-control" placeholder="Masukkan kode redeem">
+                       </div>
+
+
+
+(TOPPING)
+   //function untuk mengeksekusi tugas tertentu.
+    function hitungTotal() {
+        //let menetapkan nama ke hasil penghitungan 
+        // perseInt untuk mengonversi nilai string menjadi bilangan bulat(integer).
+        // document.queryselector lebih fleksibel karena dapat memilih berdasarkan id, Tag, class, atau berbagai selektor css
+        let harga = parseInt(document.getElementById('harga').value);
+        let jumlah = parseInt(document.getElementById('jumlah').value);
+        let topping1 = parseInt(document.querySelector('input[name="topping"]:checked').value);
+      
+        let hasil = harga * jumlah + topping1;
+
+      
+        document.getElementById("total-harga").value = hasil;
+        //document.getElementById untuk memilih berdasarkan Id uniknya saja.
+
+        //value adalah sebuah nilai
+    }
+
+
+
+//FORM TOPPING LENGKAP
+<html lang="en">
+
+<head>
+    <title>Halaman Transaksi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+<style>
+    
+
+    input[type="radio"]+label{
+        display: inline-block;
+        padding: 10px 20px;
+        
+     }
+
+     input[type="radio"]:checked+label{
+        background-color: #4CAF50;
+        color: white;
+     }
+</style>
+
+    <!-- NAVBAR-->
+    <!-- include mengimpor fungsi-fungsi yang sudah dibikin dari folder footer -->
+    <?php
+    include "footer/navbar.php";
+    ?>
+
+    <div class="contaier p-4" style="display: flex; justify-content: space-between;">
+        <div class="container1" style="flex: 1; background-color: #f1f1f1; ">
+            <form action="" method="POST">
+                 <div class="row">
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="container-fluid font-monospace ">
+
+                        <div class="mt-2">
+                            <label for="no">No. Transaksi</label>
+                            <input type="text" class="form-control" id="no" required>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="tanggal">Tangal Transaksi</label>
+                            <input type="date" class="form-control" id="tanggal" required>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="nama">Nama Customer</label>
+                            <input type="text" class="form-control" id="nama" required>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="pilih-handphone">Nama Iphone</label>
+                            <input type="text" class="form-control" id="pilih-rumah" value="<?= $datahp[$id][0] ?>" readonly>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="harga">Harga</label>
+                            <input type="text" class="form-control" id="harga" value="<?= $datahp[$id][3] ?>" readonly>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="jumlah">Jumlah</label>
+                            <input type="text" class="form-control" id="jumlah" required>
+                        </div>
+
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-info rounded rounded-5 w-100" onclick="hitungTotal()"> Total Harga </button>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="total-harga">Total Harga</label>
+                            <input type="text" class="form-control" id="total-harga" readonly>
+                        </div>
+
+
+                        <div class="mt-2">
+                            <label for="pembayaran">Pembayaran</label>
+                            <input type="text" class="form-control" id="pembayaran" required>
+                        </div>
+
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-info rounded rounded-5 w-100" onclick="hitungKembalian()">Kembalian </button>
+                        </div>
+
+                        <div class="mt-2">
+                            <label for="kembalian">Kembalian</label>
+                            <input type="text" class="form-control" id="kembalian" required>
+                        </div>
+
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-info rounded rounded-5 w-100" onclick="simpan()">Simpan</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="container2" style="flex: 1; background-color: #e3e3e3; padding: 20px;">
+                        <div class="mt-2">
+                            <input type="radio" id="topping1" name="topping" value="75000">
+                            <label for="topping1">Earphone - Rp 75.000</label>
+                        </div>
+                        
+                        <div class="mt-2">
+                            <input type="radio" id="topping2" name="topping" value="50000">
+                            <label for="topping2">Casing Phone - Rp 50.000</label>
+                        </div>
+        </div>
+    </div>
+
+    <?php
+    //   <!-- include fungsinya merequest yang sudah dibikin di footer -->
+    include "footer/footer.php";
+    ?>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+(MEMBATAS JUMLAH DAN CHECKBOX MAKANAN)
+        //function untuk mengeksekusi tugas tertentu.
+     function hitungTotal() {
+        //let menetapkan nama ke hasil penghitungan 
+        // perseInt fungsi mengubah bilangan bulat(integer).
+        //document.getElementById fungsinya memilih berdasarkan Id uniknya saja.
+        // document.queryselector fungsinya memilih selain (ID) name, dan class. 
+        let harga = parseInt(document.getElementById('harga').value);
+        // const fungsinya menetapkan nilai yang sudah di tetapkan
+        const jumlah = parseInt(document.getElementById('jumlah').value);
+        let checkbox = parseInt(document.querySelector('input[name="makanan"]:checked').value);
+      
+        let hasil = harga * jumlah + checkbox;
+
+        if(jumlah > 4){
+            alert("Maaf, Hanya bisa memesan tiket 4 orang.");
+        
+
+        jumlah = 4;
+    }
+        document.getElementById("total-harga").value = hasil;
+        //value adalah sebuah nilai
+    }
+
+
+
+		(FORM MAKANAN)
+			<div class="mt-2">
+                            <label for="checkbox">Makanan
+                            <input type="checkbox" id="checkbox" name="makanan" value="15000"> Rp15000
+                            </label>
+                        </div>
